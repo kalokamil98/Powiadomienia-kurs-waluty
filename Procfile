@@ -1,1 +1,1 @@
-worker: python kurs-powiadomienia.py
+worker: python hook.py

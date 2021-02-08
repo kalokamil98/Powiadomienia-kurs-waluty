@@ -32,12 +32,12 @@ def main():
       print(kurs +' price: ',price)
       
       last_price = price
-      if wzrost == 7:
+      if wzrost == int(environ['wzrost']):
         print("kupuje wariacie")
-        hook.send('WZROST !!!')
-    elif wzrost == 5:
+        hook.send('WZROST !!!', price)
+    elif wzrost == int(environ['spadek']):
         print("Cenka spada")
-        hook.send("Spadek !!")
+        hook.send("Spadek !!", price)
     
     time.sleep(3) 
     

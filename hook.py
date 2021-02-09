@@ -39,6 +39,6 @@ def main():
         print("Cenka spada")
         hook.send("Spadek !!")
     
-    time.sleep(3) 
+    time.sleep(60) 
     
 main()

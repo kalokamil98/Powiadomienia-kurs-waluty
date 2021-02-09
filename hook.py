@@ -26,7 +26,7 @@ def main():
   while True:
     kurs = 'bitcoin'
     price = get_price(kurs)
-    #wzrost = int(price[1])
+    wzrost = int(price[1])
     
     if price != last_price:
       print(kurs +' price: ',price)

@@ -26,7 +26,7 @@ def main():
   while True:
     kurs = 'bitcoin'
     price = get_price(kurs)
-    wzrost = int(price[1])
+    #wzrost = int(price[1])
     
     if price != last_price:
       print(kurs +' price: ',price)
@@ -34,10 +34,10 @@ def main():
       last_price = price
       if wzrost == int(environ['wzrost']):
         print("kupuje wariacie")
-        hook.send('WZROST !!!', price)
+        hook.send('WZROST !!!')
     elif wzrost == int(environ['spadek']):
         print("Cenka spada")
-        hook.send("Spadek !!", price)
+        hook.send("Spadek !!")
     
     time.sleep(3) 
     
